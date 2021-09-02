@@ -8,7 +8,7 @@
     padding: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #e9b39e;
+    background: #4a4e69;
   }
   
   /* Header/Blog Title */
@@ -16,7 +16,7 @@
     padding: 30px;
     font-size: 40px;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: #f2e9e4;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -29,29 +29,34 @@
     width: 100%;
   }
   
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
+  .img-floated {
+    float: right;
+  }
+  .img {
+    height: 250px;
     padding: 20px;
-    border-radius: 20px;
+    display: block;
+    border-left: #4a4e69 2px solid;
+    
   }
   
   /* Add a card effect for articles */
   .card {
-     background-color: white;
+     background-color: #f2e9e4;
+     position: relative;
      padding: 20px;
      margin-top: 20px;
      border-radius: 20px;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     overflow: hidden;
 
   }
 
   .card-info {
     background-color: rgba(255, 255, 255, 0);
     margin-top: 20px;
-    border: black solid;
-    border-radius: 15px;
+    border-top: black solid;
+    border-bottom: black solid;
     text-align: center;
   }
   
@@ -72,8 +77,6 @@
         font-size: 20px;
     }
   }
-
-  
   
 
   
