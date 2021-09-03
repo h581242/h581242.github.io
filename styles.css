@@ -33,8 +33,6 @@
     float: right;
   }
   .img {
-    height: 250px;
-    padding: 20px;
     display: block;
     
   }
@@ -78,7 +76,6 @@
 
     .img {
       width: 100%;
-      border: 10px #c9ada7 solid;
       border-radius: 10px;
       height: auto;
       padding: 0;
@@ -87,6 +84,8 @@
 
   }
 
+  
+  
   
   
   
