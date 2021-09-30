@@ -15,6 +15,42 @@
     </div>
       
     
+        <!-- DAG 11 -->
+        <div class="card">
+
+            <h2>Dag 11, Sept 30, 2021</h2>
+
+            <h3>Authenticator state persistence</h3>
+            <p>
+                Etter vi fikk implementert autentifiseringen, gjenstår det å implementere en state manager, som passer på at brukeren er innlogget. Igjen bruker vi firebase
+                til å gjøre dette. Når en bruker logger seg inn, vil han forbli innlogget frem til brukeren manuelt logger seg ut. Dette var vanskeligere sagt enn gjort.<br><br>
+                
+                Vi fikk det til etter hvert. Når dette var gjort, jobbet vi med å gjøre at en uautorisert bruker ikke kan endre url-en slik at han kan bypasse innloggingssiden.
+                Dette fikk vi til med litt hjelp av en ansatt hos Svippin. Når dette var gjort, la vi til feilmeldinger dersom innloggingen mislyktes, enten ved feil
+                passord/brukernavn eller ved en bruker som ikke har tilgang til nettsiden (en ikke-administrator).
+            </p>
+            <h5>Arbeidstimer idag: 5</h5>
+            <h5>Arbeidstimer totalt: 69.5</h5>
+        </div>         
+    
+        <!-- DAG 10 -->
+        <div class="card">
+
+            <h2>Dag 10, Sept 29, 2021</h2>
+
+            <h3>Verifisering</h3>
+            <p>
+                Å gjøre nettsiden responsiv var fort gjort. Når vi gjorde det, tenkte vi egentlig at vi var ferdige for denne gang. Men vi endte opp med å implementere
+                verifisering av innlogging istedet.<br><br>
+                
+                Vi bruker firebase sin Authenticator for å gjøre dette. Den tar inn email og passord, og sjekker opp mot databasen. Det tok resten av dagen å implementere
+                dette på en god og fungerende måte. 
+            </p>
+            <h5>Arbeidstimer idag: 7.5</h5>
+            <h5>Arbeidstimer totalt: 64,5</h5>
+        </div>        
+    
+    
         <!-- DAG 9 -->
         <div class="card">
 
