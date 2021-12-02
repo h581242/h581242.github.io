@@ -13,6 +13,63 @@
     <div class="header">
         <h2>Praksis hos Svippin</h2>
     </div>
+        
+    
+        <!-- DAG 29 -->
+        <div class="card">
+
+            <h2>Dag 29, Nov 26, 2021</h2>
+
+            <h3>URL og live data</h3>
+            <p>
+                Dagen begynte selvsagt med å fullføre oppgaven vi begynte på i går. Dette tok litt tid ettersom vi måtte implementere det mange steder. Etter vi fikset det, 
+                gikk vi over til å implementere en funksjon som holdt styr på hvor mange objekter av forskjellige typer det finnes på et område. Dette var relativt enkelt 
+                å implementere. Vi brukte "increment(1)" på området hver gang det ble lagt til et nytt objekt i dette området, og "increment(-1)" når et objekt blir slettet.
+            </p>
+            <h5>Arbeidstimer idag: 8</h5>
+            <h5>Arbeidstimer totalt: 190</h5>
+        </div>
+    
+        <!-- DAG 28 -->
+        <div class="card">
+
+            <h2>Dag 28, Nov 25, 2021</h2>
+
+            <h3>Dropdown i navbar og mer</h3>
+            <p>
+                Denne dagen gikk med på generelle fikser gjennom hele prosjektet. Vi implementerte alle manglende funksjonaliteter, og endret alt som vi tidligere bare hadde 
+                hardkodet. I tillegg fikk vi implementert en "keep alive" funksjon, som gjorde at man lagret data i cache, slik at en bruker trygt kan trykke "tilbake til 
+                forrige side" uten å miste data.<br><br>
+                
+                Deretter gjorde vi en helomvending i måten vi sender visse data mellom komponenter og views. Tidligere har vi sendt "selectedArea" som props mellom komponenter 
+                og views. Nå sender vi area.id som en del av URL'en istede. Nå har alle sider tilgang til det valgte området uten å måtte sende props overalt. Siden vi bruker 
+                Vue Router, kan vi bruke "$route.params.areaId" til å hente id'en til area, og deretter bruke denne id'en til å hente all dataen fra databasen. Vi rakk ikke 
+                å bli helt ferdig med dette idag, så vi fortsetter med det imorgen.
+
+            </p>
+            <h5>Arbeidstimer idag: 8</h5>
+            <h5>Arbeidstimer totalt: 182</h5>
+        </div>
+    
+         <!-- DAG 27 -->
+        <div class="card">
+
+            <h2>Dag 27, Nov 24, 2021</h2>
+
+            <h3>Sletting av objekt</h3>
+            <p>
+                Idag brukte vi dagen på å endre måten vi håndterer sletting av objekter på nettsiden. Tidligere har vii gjort det slik at vi sletter objektene fullstendig fra
+                 databasen når en bruker trykker på slett knappen. Nå har vi lagt til et felt i databasen: is_active. Istedenfor å slette objektet fullstendig, setter vi 
+                is_active til false, slik at det ikke lengre viser på nettsiden. Da har vi fortsatt dataen i databasen, slik at vi kan hente det på et senere tidspunkt 
+                dersom vi trenger det.<br><br>
+                
+                I tillegg begynte vi å fikse på en dropdown i navigasjonsbaren. Denne dropdownen skal vise en liste med linker til sider brukeren har tilganger til. Med andre 
+                ord må vi validere om brukeren har tilgang til de diverse sidene, og liste bare de sidene brukeren har tilgang til.
+
+            </p>
+            <h5>Arbeidstimer idag: 8</h5>
+            <h5>Arbeidstimer totalt: 174</h5>
+        </div>
                
         <!-- DAG 26 -->
         <div class="card">
